@@ -1,0 +1,88 @@
+@media (max-width: 1200px)
+  .navigation-item__link
+    font-size: 14px
+    width: 195px
+@media (max-width: 1050px)
+  .header-right
+    width: 350px
+  .header-left
+    width: 365px
+  .navigation-item__link
+    width: 185px
+@media (max-width: 992px)
+  .navbar-item
+    margin-right: 50px
+  .navbar-item__link
+    font-size: 16px
+  .header-left
+    // flex-direction: column
+    // align-items: start
+    // width: 175px
+    display: none
+  .header-lang
+    font-size: 16px
+  .header-email
+    font-size: 16px
+  .header-phone__line1
+    font-size: 16px
+  .header-mobile__button
+    display: block
+    width: 41px;
+    height: 41px;
+    border: 1px solid $orange
+    border-radius: 15px
+    display: flex
+    position: relative
+
+  .header-mobile__button span
+    top: 50%
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 2px
+    background: $orange
+    position: absolute
+    transition: .5s
+    &::before, &::after
+      content: ''
+      display: block
+      top: 50%
+      margin-top: -1px
+      left: 50%
+      margin-left: -10px
+      width: 20px
+      height: 2px
+      background: $orange
+      position: absolute
+      transition: .2s
+    &::before
+      transform: translateY(-6px)
+    &::after
+      transform: translateY(6px)
+  .header-mobile__button_active span
+    height: 0
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+  .navigation
+    display: none
+  .navigation-list
+    flex-direction: column
+    align-items: center
+    height: 100%
+  .navigation-item__link
+    width: 232px
+    height: 50px
+    font-size: 14px
+@media (max-width: 768px)
+  .navbar
+    display: none
+  .header-phone
+    display: none
+  .header-right
+    width: auto
+  .header-logo
+    width: 150px
+  

@@ -1,0 +1,47 @@
+.shop
+  &-sideBar
+    display: flex
+    align-items: start
+  &-grid
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-left: 50px
+  &-card
+    max-width: 220px
+    width: 100% 
+    background: #FFFFFF
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 20px    
+    padding: 40px 20px
+    margin-bottom: 20px
+    text-align: center
+    transition: .3s
+    &:hover
+      transform: scale(1.02)
+      transition: .3s
+  &-image
+    width: 100%  
+  &-productsTitle
+    margin: 30px 0px  
+  &-gridBtn
+    padding: 12px 33px
+    border-radius: 15px
+    background: $orange
+    transition: .3s
+    &:hover
+      background: transparent
+      color: #757575
+      box-shadow: 0px 4px 10px #f7910b44
+      transition: .3s
+    &::after
+      content: url('../img/page-category-shop/arr__btns.svg')  
+      padding-left: 20px
+      transition: .3s
+    &:hover::after
+      content: url('../img/page-category-shop/hover__btns.svg')  
+      transition: .3s
+
+.img__items
+  max-width: 177px
+  width: 100%

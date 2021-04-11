@@ -1,0 +1,93 @@
+.grid__template
+    display: flex
+    justify-content: space-between
+.mains__proimg
+    max-width: 329px
+    max-height: 537px
+    height: 100%
+.project__small-img
+    display: flex        
+.project
+    &__main
+        display: flex
+        justify-content: space-around
+        margin-bottom: 100px
+    &__grid1
+        display: flex
+        flex-direction: column
+        max-width: 268px
+    & .smalls
+        max-width: 267px 
+        &:last-child
+            padding-left: 8px
+.pre__main
+    padding-top: 8px
+    padding-left: 0px!important               
+.project
+    &__info
+        display: flex
+        flex-direction: column
+    &__content
+        max-width: 544px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__dates
+        display: flex
+    &__greens
+          font-weight: 500
+          font-size: 16px
+          color: $green
+          font-family: 'Roboto'    
+          padding-left: 5px
+    &__date
+        font-size: 12px
+        padding-top: 3.1px   
+    &__title
+        font-size: 18px
+        margin-bottom: 13px
+        margin-top: 10px
+    &__item
+        padding-bottom: 25px
+        max-width: 287px
+        width: 100%
+    &__btn
+        background: $violet
+        max-width: 335px  
+        padding: 20px 26px 20px 16px
+        color: #fff
+        text-decoration: none
+        font-family: 'Roboto'
+        font-weight: 700
+        border-radius: 20px
+        font-size: 18px
+        text-align: center
+        position: relative
+        &::before
+            content: url('/src/img/page-climat/main/arrow__right.svg')
+            position: absolute
+            z-index: 9
+            right: 10%
+            top: 34%
+.swiper-container 
+  width: 100%
+  height: auto
+.project_prev:hover
+    border: 1px solid transparent  
+.project_next:hover
+    border: 1px solid transparent     
+.projects__title
+    margin-top: 80px
+    margin-bottom: 60px   
+    position: relative
+    &::after 
+        width: 46px
+        height: 46px
+        content: ''
+        position: absolute
+        background: $green
+        border-radius: 100px
+        z-index: -1
+        left: 25.1%
+        top: -5px

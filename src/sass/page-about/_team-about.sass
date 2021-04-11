@@ -1,0 +1,87 @@
+.team
+    &__photo
+        max-width: 170px
+        width: 100%
+        height: 170px
+        border-radius: 100px
+    &-aboutBigcard
+        display: flex
+        flex-direction: column
+        text-align: center
+        max-width: 288px
+        width: 100%
+        background: #FFFFFF
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 20px
+        padding: 48px 26px 32px 26px
+    &-aboutTitle 
+        position: relative
+        text-align: center
+        &::after 
+            width: 46px
+            height: 46px
+            content: ''
+            position: absolute
+            background: $green
+            border-radius: 100px
+            z-index: -1
+            left: 62%   
+
+    &__name
+        font-size: 16px
+        font-family: 'Roboto'
+        font-weight: 500  
+        margin-top: 32px
+        margin-bottom: 19px
+    &__texsts
+        font-size: 14px
+.swiper3-container
+    padding: 30px 10px  
+    display: flex
+    margin-bottom: 100px   
+.about__slidesas
+    transition: all .5s 
+    &-active
+        transform: scale(1.1)   
+        transition: all .5s 
+        
+        
+.about__slidesas-active
+    & .team-aboutBigcard
+        & .team__name
+            font-size: 18px
+.about__slidesas-active
+    & .team-aboutBigcard
+        & .team__texsts 
+            flex: 16px!important  
+.about__conts
+    position: relative
+.about_prev3
+    position: absolute
+    top: 71.3%
+    left: -8% 
+    &::before
+        border: 1px solid $violet
+        content: url('../img/page-about/team-about/left__arrows.svg')
+    &:hover::before
+        border: 1px solid $violet
+        content: url('../img/page-about/team-about/left__arrows.svg')
+.about_next3
+    position: absolute
+    top: 68.5%   
+    right: -4% 
+    &::before
+        border: 1px solid $violet
+        content: url('../img/page-about/team-about/right__arrows.svg')!important 
+    &:hover::before
+        border: 1px solid $violet
+        content: url('../img/page-about/team-about/right__arrows.svg')!important 
+
+
+
+
+
+
+
+
+    

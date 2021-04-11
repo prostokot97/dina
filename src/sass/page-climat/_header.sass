@@ -1,0 +1,115 @@
+.header
+  padding-top: 25px
+  padding-bottom: 25px
+.header-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+.header-left
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 378px
+.header-right
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 378px
+.header-lang
+  font-size: 18px
+  font-family: "Montserrat SemiBold"
+  text-transform: uppercase
+.header-lang__link
+  color: #C8C8C8
+  text-decoration: none
+.header_accent
+  color: #8B86BC
+.header-email
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-family: 'Montserrat SemiBold'
+.header-email a
+  text-decoration: none
+  color: #4a4a4a
+  position: relative
+  &::before
+    width: 0%
+    height: 1.5px
+    background: #737373
+    position: absolute
+    z-index: 99
+    content: ''
+    bottom: -4px
+    transition: all 0.3s
+  &:hover::before
+    width: 100%
+    height: 1.5px
+    background: #737373
+    position: absolute
+    z-index: 99
+    content: ''
+    bottom: -4px
+    transform: translateX(1px)
+    transition: all 0.3s
+.header-email svg
+  margin-right: 12px
+.header-email_accent
+  color: #FBE673
+.header-phone__line1
+  display: flex
+  align-items: center
+  font-size: 18px
+  font-family: 'Montserrat SemiBold'
+  position: relative
+  & a
+    text-decoration: none
+    color: #4a4a4a
+    transition: 0.3s
+  & a:hover
+    color: $green  
+    transition: 0.3s
+  &::before
+    width: 0%
+    height: 1.5px
+    background: $green
+    position: absolute
+    z-index: 99
+    content: ''
+    bottom: -20px
+    transition: all 0.3s
+  &:hover::before
+    width: 100%
+    height: 1.5px
+    background: $green
+    position: absolute
+    z-index: 99
+    content: ''
+    bottom: -20px
+    transform: translateX(1px)
+    transition: all 0.3s   
+  & svg
+    margin-right: 12px
+.header-phone_accent
+    color: #8AC99E
+.header-phone__line2
+  font-size: 12px
+  font-family: "Montserrat Light"
+  text-align: right
+.header-button
+  font-size: 12px
+  transition: 0.3s
+  &:hover
+    background: #F19264
+    color: #fff
+    transition: 0.3s
+.header-mobile__button
+  display: none
+@media (max-width: 991px)
+  .header-lang__link
+    font-size: 14px
+    font-family: "Montserrat SemiBold"
+    text-transform: uppercase
+@media (max-width: 768px)
+  .header-lang__link
+    font-size: 12px

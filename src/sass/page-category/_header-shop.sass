@@ -1,0 +1,67 @@
+.shop
+    &-navi
+        display: flex
+        justify-content: space-between
+        align-content: center
+        padding-top: 26px
+        border-top: 0.2px solid #b0b0b060
+    &__list
+        display: flex
+        list-style: none 
+        padding-left: 0px 
+    &-btn
+        padding: 15px 26px 15px 66px     
+        background: $violet
+        font-weight: 300
+        font-family: 'Montserrat Light'
+        position: relative
+        align-items: center
+        text-align: right
+        &:hover
+            background: transparent
+            color: #757575
+            box-shadow: 0px 4px 10px #8b86bc70
+        &::before
+            content: url('../img/page-category-shop/carts.svg')
+            position: absolute
+            top: 9.5px
+            left: 25px
+        &:hover::before
+            content: url('../img/page-category-shop/carts__hover.svg')           
+
+.shopNav__item
+    margin-right: 42px
+    font-size: 20px
+    transition: 0.5s
+    position: relative
+    a:hover
+        color: $violet
+        transition: 0.5s
+    &::before
+        width: 0%
+        height: 1.5px
+        background: $violet
+        position: absolute
+        content: '' 
+        bottom: -5px 
+        border-radius: 100px  
+        transition: 0.4s
+    &:hover::before
+        width: 100%
+        height: 1.5px
+        background: $violet
+        position: absolute
+        content: '' 
+        bottom: -5px 
+        border-radius: 100px  
+        transition: 0.4s
+
+    &:last-child
+        margin-right: 0px     
+
+    
+        
+
+
+
+  

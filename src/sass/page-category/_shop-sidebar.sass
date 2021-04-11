@@ -1,0 +1,130 @@
+.green-cont
+  color: $green   
+  &::after
+        content: url('../img/page-category-shop/green__arUp.svg')!important
+.violet-cont
+  color: $violet  
+  &::after
+        content: url('../img/page-category-shop/violet__arUp.svg')!important
+.yellow-cont
+  color: #DEC84D  
+  &::after
+        content: url('../img/page-category-shop/yellow__arUp.svg')!important
+.orange-cont
+    color: $orange
+
+.orange-cont-h
+    &:hover
+        color: $orange   
+    &:hover::after
+        content: url('../img/page-category-shop/arr__shop-menu.svg')!important
+.violet-cont-h
+    &:hover
+        color: $violet 
+    &:hover::after
+        content: url('../img/page-category-shop/violet__arMenu.svg')!important   
+.green-cont-h
+    &:hover
+        color: $green 
+    &:hover::after
+        content: url('../img/page-category-shop/green__arMenu.svg')!important         
+.yellow-cont-h
+    &:hover
+        color: #DEC84D  
+    &:hover::after
+        content: url('../img/page-category-shop/yellow__arMenu.svg')!important        
+
+
+#chck1
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+#chck2
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+#chck3
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+#chck4
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+.tabs
+  display: flex
+  flex-direction: column
+  max-width: 334px
+  width: 100% 
+.tab 
+  width: 100%
+  color: $orange
+  overflow: hidden
+  padding: 15px 10px
+  margin-top: -20px
+  &-label 
+    display: flex
+    justify-content: space-between
+    padding: 1em
+    background: #FFFFFF
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+    border-radius: 20px
+    font-weight: bold
+    cursor: pointer
+    /* Icon */   
+    &::after 
+      content: url('../img/page-category-shop/ar__up.svg')
+      width: 1em
+      height: 1em
+      text-align: center
+      transition: all .35s
+  &-content 
+    max-height: 0
+    padding: 0em 1em
+    color: #757575
+    transition: all .35s
+  
+  &-close 
+    display: flex
+    justify-content: flex-end
+    padding: 1em
+    font-size: 0.75em
+    cursor: pointer
+// :checked
+input:checked 
+  + .tab-label  
+    &::after 
+      transform: rotate(180deg)
+      margin-bottom: -36px
+      margin-top: 6px
+  ~ .tab-content 
+    max-height: 100vh
+    padding: 1em
+
+
+.shop
+  &-list
+    padding-top: 5px  
+    padding-left: 10px  
+    list-style: none
+  &-items
+    padding-top: 25px  
+    position: relative
+    transition: .3s
+.link__items-shop
+  &::after
+    content: url('../img/page-category-shop/arr__shop-items.svg')
+    position: absolute
+    z-index: 1
+    right: 10px
+    float: left
+    clear: both
+    top: 24.5px
+    transition: .3s
+  &:hover::after
+    content: url('../img/page-category-shop/arr__shop-menu.svg')
+    transform: translateX(10px)
+    transition: .3s
+
+                          
+        

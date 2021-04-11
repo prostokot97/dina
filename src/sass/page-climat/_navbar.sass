@@ -1,0 +1,41 @@
+.navbar
+  background-color: #F5F5F5
+  padding-top: 15px
+  padding-bottom: 15px
+.navbar-menu
+  display: flex
+  justify-content: center
+  padding-left: 0
+  list-style: none
+  font-family: "Roboto Regular"
+.navbar-item
+  margin-right: 71px
+  position: relative
+  &:last-child
+    margin-right: 0 
+.navbar-item__link
+  color: #737373
+  text-decoration: none
+  font-size: 18px
+  position: relative
+  &::before
+    width: 0%
+    height: 1.5px
+    background: #737373
+    position: absolute
+    z-index: 99
+    content: ''
+    bottom: -2px
+    transition: all 0.3s
+    
+  &:hover::before
+    width: 100%
+    height: 1.5px
+    background: #737373
+    position: absolute
+    z-index: 99
+    content: ''
+    bottom: -2px
+    transform: translateX(1px)
+    transition: all 0.3s
+    
