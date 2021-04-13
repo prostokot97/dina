@@ -1,14 +1,31 @@
 'use strict';
 
+/* toggle menu */
 let adaptiveMenu = document.querySelector(".header-mobile__button");
 let mobileMenu = document.querySelector(".mobile-menu");
 let content = document.querySelector(".content")
+let closeModal = document.querySelector(".mobile-menu__close");
 adaptiveMenu.addEventListener("click", function(e){
   e.preventDefault();
   this.classList.toggle("header-mobile__button_active");
   mobileMenu.classList.toggle("mobile-menu_active");
-  content.classList.toggle("content_active");
 });
+closeModal.addEventListener("click", function(e){
+  mobileMenu.classList.toggle("mobile-menu_active");
+  adaptiveMenu.classList.toggle("header-mobile__button_active");
+})
+// категории
+let categoriesMenu = document.querySelector(".navigation-wrap__link");
+let categories = document.querySelectorAll(".menu-item");
+categoriesMenu.addEventListener("click", function(e)
+{
+  e.preventDefault();
+  categoriesMenu.classList.toggle("navigation-wrap__link_active")
+  categories.forEach(function(item){
+    item.classList.toggle("mobile-hidden");
+  })
+})
+// слайдеры
 const swiper1 = new Swiper('.swiper1-container', {
   // Optional parameters
   direction: 'horizontal',
