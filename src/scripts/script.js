@@ -25,6 +25,32 @@ categoriesMenu.addEventListener("click", function(e)
     item.classList.toggle("mobile-hidden");
   })
 })
+// табы
+
+let tabsBtn = document.querySelectorAll('.project-category');
+let tabsItems = document.querySelectorAll('.project-slider');
+
+tabsBtn.forEach(function(item){
+  item.addEventListener('click', function(){
+    let currentBtn = item;
+    let tabId = currentBtn.getAttribute("data-tab");
+    let currentTab = document.querySelector(tabId);
+    if( ! currentBtn.classList.contains('project-category_active'))
+    {
+      tabsBtn.forEach(function(item){
+        item.classList.remove('project-category_active');
+      });
+      tabsItems.forEach(function(item){
+        item.classList.remove('project-slider_active');
+      });
+      currentBtn.classList.add('project-category_active');
+      currentTab.classList.add('project-slider_active');
+    }
+    
+  });
+});
+document.querySelector(".project-category").click();
+
 // слайдеры
 const swiper1 = new Swiper('.swiper1-container', {
   // Optional parameters
@@ -35,8 +61,50 @@ const swiper1 = new Swiper('.swiper1-container', {
   grabCursor: true,
   
   navigation: {
-    nextEl: '.project_next',
-    prevEl: '.project_prev',
+    nextEl: '#swiperNext1',
+    prevEl: '#swiperPrev1',
+  },
+});
+
+const swiper11 = new Swiper('.swiper11-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  
+  navigation: {
+    nextEl: '#swiperNext11',
+    prevEl: '#swiperPrev11',
+  },
+});
+
+const swiper12 = new Swiper('.swiper12-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  
+  navigation: {
+    nextEl: '#swiperNext12',
+    prevEl: '#swiperPrev12',
+  },
+});
+
+const swiper13 = new Swiper('.swiper13-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  grabCursor: true,
+  
+  navigation: {
+    nextEl: '#swiperNext13',
+    prevEl: '#swiperPrev13',
   },
 });
 
@@ -85,5 +153,23 @@ const swiper4 = new Swiper('.swiper4-container', {
     prevEl: '.history_next3',
   },
 });
-
-
+const swiper5 = new Swiper('.command-slider', {
+  loop: true,
+  slidesPerView: 3,
+  // spaceBetween: 28,
+  centeredSlides: true,
+  slideActiveClass: "command-slide_active",
+  loopAdditionalSlides: 30,
+  navigation: {
+    nextEl: '.command__arrow_next',
+    prevEl: '.command__arrow_prev',
+  },
+});
+const swiper6 = new Swiper(".history-slider", {
+  loop: true,
+  slidesPerView: 5,
+  navigation: {
+    nextEl: '.history__arrow_next',
+    prevEl: '.history__arrow_prev',
+  },
+});

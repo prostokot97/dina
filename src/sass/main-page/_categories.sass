@@ -1,0 +1,101 @@
+.categories
+    padding-top: 40px
+    padding-bottom: 60px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &_side
+            width: 906px
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+    &-tile
+        display: flex
+        align-items: center
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px
+        position: relative
+        &:first-child
+            height: 213px
+            width: 502px
+            padding: 41px 40px 61px 40px
+            margin-bottom: 10px
+            & img
+                position: absolute
+                top: 10px
+                right: 10px
+                width: 248px
+                height: 185px
+                display: block
+                z-index: 0
+        &:nth-child(2)
+            height: 213px
+            width: 394px
+            padding: 41px 27px 42px 27px
+            margin-bottom: 10px
+            & img
+                position: absolute
+                top: 15px
+                right: 5px
+                width: 212px
+                height: 191px
+                display: block
+                z-index: 0
+        &:nth-child(3)
+            height: 213px
+            width: 373px
+            padding: 41px 40px 61px 40px
+            & img
+                position: absolute
+                width: 195px
+                height: 216px
+                top: 0
+                right: 5px
+        &:nth-child(4)
+            height: 213px
+            width: 523px
+            padding: 48px 40px 65px 40px
+            & img
+                position: absolute
+                width: 270px
+                height: 192px
+                top: 21px
+                right: 0
+        &_shop
+            padding: 61px 20px
+            display: flex
+            align-items: start
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px
+            width: 284px
+            height: 436px
+            position: relative
+            & .categories-img
+                width: 268px
+                height: 237px
+                position: absolute
+                bottom: 33px
+                left: 8px
+                right: 8px
+            &:hover
+                background: $violet
+                .categories-text__title
+                    color: #fff
+        &:hover
+            background: $violet
+            .categories-text__title, .categories-text__description
+                color: #fff
+    &-text
+        &__title
+            font-size: 36px
+            font-family: "Montserrat SemiBold"
+            margin-bottom: 12px
+            margin-top: 0
+        &__description
+            display: block
+            font-size: 16px
+            z-index: 4
+            position: relative
+            width: 223px
+            color: #4A4A4A

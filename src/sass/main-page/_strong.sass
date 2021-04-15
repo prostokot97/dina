@@ -1,0 +1,139 @@
+.strong
+    margin-top: -170px
+    position: relative
+    padding-top: 40px
+    background: #F8F7FF
+    padding-bottom: 180px
+    margin-bottom: 170px
+    transform: skewY(-10deg)
+    &__title
+        text-align: center
+        margin-top: 0
+        margin-bottom: 16px
+    &__subtitle
+        display: block
+        max-width: 383px
+        text-align: center
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 80px
+    &-wrap
+        display: flex
+        justify-content: center
+    &-container
+        transform: skewY(10deg)
+    &-img
+        width: 457.23px
+        height: 457.23px
+        border-radius: 50%
+        background: #fff
+        display: flex
+        align-items: center
+        justify-content: center
+        box-shadow: 4px 5px 20px rgba(139, 134, 188, 0.38)
+        position: relative
+        &:before
+            position: absolute
+            content: ''
+            width: 580px
+            height: 580px
+            border-radius: 50%
+            border: 1px solid rgba(139, 134, 188, 0.75)
+        &:after
+            position: absolute
+            content: ''
+            width: 740px
+            height: 740px
+            border-radius: 50%
+            border: 1px solid rgba(139, 134, 188, 0.41)
+    &__img
+        width: 427px
+        height: 246px
+    &-list
+        &_one, &_two
+            padding-left: 0
+            list-style: none
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+    &-list_one
+        text-align: right
+        position: relative
+        width: 445px
+        & .strong-item
+            display: flex
+            align-items: center
+            width: 445px
+            color: #000000
+            position: absolute
+            z-index: 1
+            &:first-child
+                top: 40px
+                right: -90px
+                & .strong-item__num
+                    margin-left: 20px
+            &:nth-child(2)
+                top: 150px
+                right: -27px
+                & .strong-item__num
+                    margin-left: 30px
+            &:nth-child(3)
+                top: 265px
+                right: -27px
+                & .strong-item__num
+                    margin-left: 30px
+            &:last-child
+                top: 375px
+                right: -90px
+                & .strong-item__num
+                    margin-left: 20px
+            &__num
+                width: 40px
+                height: 40px
+                display: flex
+                border-radius: 50%
+                border: 2px solid $violet
+                align-items: center
+                justify-content: center
+                color: $orange
+                font-size: 18px
+    &-list_two
+        position: relative
+        width: 445px
+        & .strong-item
+            display: flex
+            align-items: center
+            width: 445px
+            color: #000000
+            position: absolute
+            &:first-child
+                top: 40px
+                left: -90px
+                & .strong-item__num
+                    margin-right: 20px
+            &:nth-child(2)
+                top: 150px
+                left: -27px
+                & .strong-item__num
+                    margin-right: 30px
+            &:nth-child(3)
+                top: 265px
+                left: -27px
+                & .strong-item__num
+                    margin-right: 30px
+            &:last-child
+                top: 375px
+                left: -90px
+                & .strong-item__num
+                    margin-right: 20px
+            &__num
+                width: 40px
+                height: 40px
+                display: flex
+                border-radius: 50%
+                border: 2px solid $violet
+                align-items: center
+                justify-content: center
+                color: $orange
+                font-size: 18px

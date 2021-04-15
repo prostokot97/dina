@@ -3,15 +3,30 @@
         max-width: 286px
 
 .main
-    height: 540px
     width: 100%
-    background-image: url('../img/page-climat/main/back.jpg')
     background-size: cover
     background-position: center center
     color: #fff
     align-items: center   
     display: flex
-
+    &_one
+        background-image: url('../img/index/main/main-bg.png')
+        height: 632px
+    &_climat
+        background-image: url('../img/page-climat/main/back.jpg')
+        height: 540px
+    &-block
+        width: 856px
+        height: 460px
+        background: rgba(0, 0, 0, 0.5)
+        border-top-right-radius: 40px
+        border-bottom-right-radius: 40px
+        padding: 49px 68px 60px 125px
+    &__title
+        font-family: "Montserrat SemiBold"
+        font-size: 48px
+        line-height: 115.69%
+        margin-top: 0
 .main__content
     width: 876px
     height: 380px
