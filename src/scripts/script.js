@@ -51,6 +51,22 @@ tabsBtn.forEach(function(item){
 });
 document.querySelector(".project-category").click();
 
+// аккордеон
+let accordion = document.querySelectorAll('.faq-accordion__item');
+accordion.forEach(function(item){
+  item.addEventListener('click', function(){
+    if(item.classList.contains('faq-accordion__item_active'))
+    {
+      item.classList.remove('faq-accordion__item_active');
+    }
+    else
+    {
+      item.nextElementSibling.classList.remove('faq-accordion__content_active')
+      item.classList.toggle('faq-accordion__item_active');
+    }
+    item.nextElementSibling.classList.toggle('faq-accordion__content_active');
+  });
+})
 // слайдеры
 const swiper1 = new Swiper('.swiper1-container', {
   // Optional parameters
@@ -59,7 +75,8 @@ const swiper1 = new Swiper('.swiper1-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   grabCursor: true,
-  
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '#swiperNext1',
     prevEl: '#swiperPrev1',
@@ -73,7 +90,8 @@ const swiper11 = new Swiper('.swiper11-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   grabCursor: true,
-  
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '#swiperNext11',
     prevEl: '#swiperPrev11',
@@ -87,7 +105,8 @@ const swiper12 = new Swiper('.swiper12-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   grabCursor: true,
-  
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '#swiperNext12',
     prevEl: '#swiperPrev12',
@@ -101,7 +120,8 @@ const swiper13 = new Swiper('.swiper13-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   grabCursor: true,
-  
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '#swiperNext13',
     prevEl: '#swiperPrev13',

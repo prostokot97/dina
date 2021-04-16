@@ -1,0 +1,51 @@
+.faq
+    padding-top: 60px
+    background: #FFFCF3
+    transform: skewY(5deg)
+    padding-bottom: 70px
+    & .container
+        transform: skewY(-5deg)
+    &-wrap
+        text-align: center
+    &__title
+        text-align: center
+        display: inline-block
+        position: relative
+        z-index: 1
+        margin-bottom: 36px
+        margin-top: 0
+        &::after
+            content: ''
+            position: absolute
+            right: -10px
+            top: -10px
+            width: 46px
+            height: 46px
+            background: $yellow
+            border-radius: 50%
+            z-index: -1
+    &-accordion
+        &__item
+            background: #fff
+            width: 1065px
+            margin-left: auto
+            margin-right: auto
+            padding: 27px 41px
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+            border-radius: 20px
+            margin-top: 8px
+            cursor: pointer
+            &:first-child
+                margin-top: 0
+        &__content
+            background: rgba(245, 245, 245, 0.7)
+            padding: 34px 45px 47px 50px
+            width: 1007px
+            margin-left: auto
+            margin-right: auto
+            font-size: 18px
+            color: #797979
+            display: none
+            &_active
+                display: block
+            

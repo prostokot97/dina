@@ -1,0 +1,53 @@
+.consult
+    padding-top: 15px
+    padding-bottom: 100px
+    &-wrap
+        display: flex
+    &-img
+        width: 487px
+        margin-right: 67px
+    &__title
+        max-width: 515px
+        margin-bottom: 50px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 36px
+            height: 36px
+            top: 50%
+            margin-top: -15px
+            right: -5px
+            background: $violet
+            border-radius: 50%
+            z-index: -1
+    &-form
+        display: flex
+        flex-wrap: wrap
+        width: 559px
+        justify-content: space-between
+        &-wrap
+            position: relative
+            &_email
+                & .consult-form__icon
+                    margin-top: 0
+        &__input
+            width: 259px
+            height: 50px
+            padding-left: 35px
+            border-bottom: 1px solid #C9C9C9
+            &_email
+                margin-top: 15px
+
+        &__icon
+            position: absolute
+            left: 0
+            top: 50%
+            width: 14px
+            height: 14px
+            margin-top: -7px
+        &__button
+            width: 259px
+            border: none
+            margin-top: 15px
+            height: 50px
