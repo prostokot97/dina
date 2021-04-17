@@ -49,7 +49,7 @@ tabsBtn.forEach(function(item){
     
   });
 });
-document.querySelector(".project-category").click();
+// document.querySelector(".project-category").click();
 
 // аккордеон
 let accordion = document.querySelectorAll('.faq-accordion__item');

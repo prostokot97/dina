@@ -78,7 +78,7 @@
         height: 46px
         content: ''
         position: absolute
-        background: $green
+        // background: $green
         border-radius: 100px
         z-index: -1
         position: relative
@@ -90,6 +90,70 @@
         background: $green
         border-radius: 100px
         z-index: -1
-        left: 16.1%
         top: -6px     
-    
+.products-horeca
+    padding-bottom: 30px
+    & .products
+        &-list
+            display: flex
+            flex-wrap: wrap
+        &__link
+            position: absolute
+            top: 18px
+            left: 18px
+            color: $orange
+        &__tile
+            width: 380px
+            text-align: center
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+            height: 457px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            position: relative
+            border-radius: 20px
+            margin-bottom: 35px
+            &:not(:nth-child(3))
+                margin-right: 30px
+            &:nth-child(6)
+                margin-right: 0
+        &-img
+            margin:
+                top: 18px
+                left: 15px
+                right: 15px
+            height: 312px
+            display: flex
+            justify-content: center
+            align-items: center
+        &__img
+            max-width: 100%
+            max-height: 100%
+        &-name
+            background: $orange
+            height: 100px
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 28px
+            font-family: "Montserrat SemiBold"
+            color: #fff
+            border-radius: 20px
+        &-button
+            display: block
+            margin-left: auto
+            margin-right: auto
+            border: none
+            padding: 26px 58px 26px 43px
+            font-size: 18px
+            font-family: "Montserrat SemiBold"
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                top: 50%
+                right: 27px
+                margin-top: -8px
+                width: 17px
+                height: 17px
+                background: url('../img/index/products_horeca/products_arrow.svg')

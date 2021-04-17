@@ -1,44 +1,52 @@
-.serv_step
-    margin-top: 100px   
-.serv
-    display: flex
-    justify-content: space-between
-    margin-top: 43px
-    &-cart
-        background: #FFFFFF
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
-        border-radius: 20px 
-        padding: 36px 10px 0px 10px 
+.services
+    &__title
+        margin-top: 0px
+        margin-bottom: 50px
+        position: relative
+        &::after 
+            width: 46px
+            height: 46px
+            content: ''
+            position: absolute
+            background: $green
+            border-radius: 100px
+            z-index: -1
+            left: 23.7%
+            top: -6px
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &__block
+        width: 185px
+        height: 217px
+        padding-top: 40px
         text-align: center
-        margin-right: 13px
-        max-width: 196px
-        max-height: 217px
-        width: 100%
-    &__img
-        width: 100%
-        max-width: 51px
-        max-height: 51px
-    &-title  
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 20px
+        &:nth-child(3), &:last-child
+            & .services__icon
+                margin-bottom: 17px
+        &:nth-child(2), 
+            & .services__name
+                margin-bottom: 22px
+        &:nth-child(4)
+            & .services__name
+                margin-bottom: 22px
+        &:nth-child(3)
+            & .services__name
+                margin-bottom: 4px
+        &:nth-child(5)
+            & .services__name
+                margin-bottom: 1px
+            & .services__text
+                font-size: 13px
+    &__name
+        font-family: "Montserrat Medium"
         font-size: 20px
-        font-weight: 600  
-.services__title
-    margin-top: 0px
-    margin-bottom: 50px
-    position: relative
-    &::after 
-        width: 46px
-        height: 46px
-        content: ''
-        position: absolute
-        background: $green
-        border-radius: 100px
-        z-index: -1
-        left: 23.7%
-        top: -6px
-.mobile-serv
-    display: none
-@media (max-width:767px)
-    .mobile-serv
-        display: block   
-    .serv_step
-        display: none        
+        line-height: 137.69%
+    &__icon
+        width: 51px
+        margin-bottom: 26px
+    &__subname
+        font-family: "Montserrat Light"
+        font-size: 16px

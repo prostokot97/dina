@@ -382,15 +382,15 @@ template {
 }
 
 .cl__yellow {
-  background: #8B86BC;
+  background: #FBE673;
 }
 
 .cl__orange {
-  background: #8B86BC;
+  background: #F19264;
 }
 
 .cl__green {
-  background: #8B86BC;
+  background: #8AC99E;
 }
 
 * {
@@ -815,6 +815,22 @@ h6 {
 
 a {
   color: #252525;
+}
+
+.dot-violet:after {
+  background: #8B86BC;
+}
+
+.dot-green:after {
+  background: #8AC99E;
+}
+
+.dot-orange:after {
+  background: #F19264;
+}
+
+.dot-yellow:after {
+  background: #FBE673;
 }
 
 .categories {
@@ -1570,6 +1586,9 @@ a {
 
 .partners {
   padding-bottom: 17px;
+}
+
+.partners-main {
   padding-bottom: 125px;
 }
 
@@ -1727,6 +1746,44 @@ a {
   border: none;
   margin-top: 15px;
   height: 50px;
+}
+
+.task {
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+  width: 380px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  display: block;
+  z-index: 5;
+}
+
+.tasks {
+  padding-top: 50px;
+  padding-bottom: 38px;
+}
+
+.tasks-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task__content {
+  padding: 45px 60px 35px 60px;
+  border-radius: 20px;
+}
+
+.task:first-child .task__content {
+  border: 1px solid #8B86BC;
+}
+
+.task:nth-child(2) .task__content {
+  border: 1px solid #F19264;
+}
+
+.task:last-child .task__content {
+  border: 1px solid #8AC99E;
 }
 
 .navbar {
@@ -2015,10 +2072,11 @@ a {
   font-size: 17px;
 }
 
-.navigation-item__link:hover {
-  background: transparent;
+.navigation-item__link:hover, .navigation-item__link_active {
+  background: #fff;
   color: #737373;
   transition: all 0.3s;
+  box-shadow: 0px 4px 10px #8ac99e6c;
 }
 
 .navigation-wrap__link {
@@ -2067,16 +2125,27 @@ a {
 .main_one {
   background-image: url("../img/index/main/main-bg.png");
   height: 632px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main_climat {
   background-image: url("../img/page-climat/main/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 540px;
+}
+
+.main_horeca {
+  background: url("../img/index/main/main-horeca.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 70px;
 }
 
 .main-block {
   width: 856px;
-  height: 460px;
   background: rgba(0, 0, 0, 0.5);
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -2088,6 +2157,10 @@ a {
   font-size: 48px;
   line-height: 115.69%;
   margin-top: 0;
+}
+
+.main__bread {
+  margin-bottom: 35px;
 }
 
 .main__content {
@@ -2153,6 +2226,7 @@ a {
 
 .about__t {
   padding-left: 40px;
+  max-width: 618px;
 }
 
 .about__t2 {
@@ -2170,7 +2244,6 @@ a {
   height: 46px;
   content: '';
   position: absolute;
-  background: #8AC99E;
   border-radius: 100px;
   z-index: -1;
   left: 8.1%;
@@ -2333,7 +2406,6 @@ a {
   height: 46px;
   content: '';
   position: absolute;
-  background: #8AC99E;
   border-radius: 100px;
   z-index: -1;
   position: relative;
@@ -2347,41 +2419,94 @@ a {
   background: #8AC99E;
   border-radius: 100px;
   z-index: -1;
-  left: 16.1%;
+  right: -15px;
   top: -6px;
 }
 
-.serv_step {
-  margin-top: 100px;
+.products-horeca {
+  padding-bottom: 30px;
 }
 
-.serv {
+.products-horeca .products-list {
   display: flex;
-  justify-content: space-between;
-  margin-top: 43px;
+  flex-wrap: wrap;
 }
 
-.serv-cart {
-  background: #FFFFFF;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 36px 10px 0px 10px;
+.products-horeca .products__link {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  color: #F19264;
+}
+
+.products-horeca .products__tile {
+  width: 380px;
   text-align: center;
-  margin-right: 13px;
-  max-width: 196px;
-  max-height: 217px;
-  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  height: 457px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 35px;
 }
 
-.serv__img {
-  width: 100%;
-  max-width: 51px;
-  max-height: 51px;
+.products-horeca .products__tile:not(:nth-child(3)) {
+  margin-right: 30px;
 }
 
-.serv-title {
-  font-size: 20px;
-  font-weight: 600;
+.products-horeca .products__tile:nth-child(6) {
+  margin-right: 0;
+}
+
+.products-horeca .products-img {
+  margin-top: 18px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 312px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-horeca .products__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.products-horeca .products-name {
+  background: #F19264;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-family: "Montserrat SemiBold";
+  color: #fff;
+  border-radius: 20px;
+}
+
+.products-horeca .products-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 26px 58px 26px 43px;
+  font-size: 18px;
+  font-family: "Montserrat SemiBold";
+  position: relative;
+}
+
+.products-horeca .products-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 27px;
+  margin-top: -8px;
+  width: 17px;
+  height: 17px;
+  background: url("../img/index/products_horeca/products_arrow.svg");
 }
 
 .services__title {
@@ -2402,17 +2527,58 @@ a {
   top: -6px;
 }
 
-.mobile-serv {
-  display: none;
+.services-wrap {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (max-width: 767px) {
-  .mobile-serv {
-    display: block;
-  }
-  .serv_step {
-    display: none;
-  }
+.services__block {
+  width: 185px;
+  height: 217px;
+  padding-top: 40px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.services__block:nth-child(3) .services__icon, .services__block:last-child .services__icon {
+  margin-bottom: 17px;
+}
+
+.services__block:nth-child(2) .services__name {
+  margin-bottom: 22px;
+}
+
+.services__block:nth-child(4) .services__name {
+  margin-bottom: 22px;
+}
+
+.services__block:nth-child(3) .services__name {
+  margin-bottom: 4px;
+}
+
+.services__block:nth-child(5) .services__name {
+  margin-bottom: 1px;
+}
+
+.services__block:nth-child(5) .services__text {
+  font-size: 13px;
+}
+
+.services__name {
+  font-family: "Montserrat Medium";
+  font-size: 20px;
+  line-height: 137.69%;
+}
+
+.services__icon {
+  width: 51px;
+  margin-bottom: 26px;
+}
+
+.services__subname {
+  font-family: "Montserrat Light";
+  font-size: 16px;
 }
 
 .grid__news {
@@ -2877,6 +3043,10 @@ a {
   z-index: -1;
   left: 11.8%;
   top: -5px;
+}
+
+.reviews__title_horeca {
+  margin-top: 0;
 }
 
 .submission {
