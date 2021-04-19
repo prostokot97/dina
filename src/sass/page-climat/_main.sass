@@ -1,13 +1,13 @@
-@media (max-width:767px)
-    .main__content
-        max-width: 286px
+//@media (max-width:767px)
+//    .main__content
+//        max-width: 286px
 
 .main
     width: 100%
     background-size: cover
     background-position: center center
     color: #fff
-    align-items: center   
+    align-items: center
     display: flex
     &_one
         background-image: url('../img/index/main/main-bg.png')
@@ -42,18 +42,50 @@
 .main__content
     width: 876px
     height: 380px
-    background:#00000034
+    background: #00000034
     border-top-right-radius: 40px
     border-bottom-right-radius: 40px
     padding: 48px 30px 27px 30px
     margin-top: 45px
-    margin-bottom: 46px  
-    align-items: center 
-
+    margin-bottom: 46px
+    align-items: center
 
 .main__desc
-    margin-bottom: 46px    
+    margin-bottom: 46px
     max-width: 526px
 
 .arrow__bread
     margin: 0px 21px
+@media (max-width: 992px)
+    .main
+        height: 476px
+        &-block
+            width: 90%
+            height: 90%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+        &__title
+            font-size: 36px
+        .main__btn
+            width: 250px
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 67px
+@media (max-width: 768px)
+    .main__title
+        font-size: 28px
+        .main-block
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+@media (max-width: 576px)
+    .main-block
+        padding: 82px 15px 62px 15px
+        .main__title
+            font-size: 24px
+            margin-bottom: 0
+        .main__desc
+            margin-bottom: 0
+            margin-top: 0

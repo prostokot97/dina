@@ -137,3 +137,108 @@
                 justify-content: center
                 color: $orange
                 font-size: 18px
+@media (max-width: 992px)
+    .strong
+        padding-top: 150px
+        transform: skewY(-30deg)
+    .strong-container
+        transform: skewY(30deg)
+    .strong-wrap
+        flex-direction: column
+    .strong__subtitle
+        margin-bottom: 60px
+    .strong-img
+        width: 100%
+        height: auto
+        order: 0
+        background: transparent
+        box-shadow: none
+        &:before, &:after
+            display: none
+    .strong-left
+        order: 1
+    .strong-right
+        order: 2
+    .strong-list_one, .strong-list_two
+        align-items: center
+    .strong-list_one .strong-item
+        position: relative
+        text-align: left
+    .strong-list_one
+        width: 100%
+    .strong-list_one .strong-item:first-child
+        top: 0
+        left: 0
+        flex-direction: row-reverse
+        margin-bottom: 20px
+    .strong-list_one .strong-item:first-child .strong-item__num
+        margin-left: 0
+        margin-right: 8px
+    .strong-list_one .strong-item:nth-child(2)
+        position: relative
+        flex-direction: row-reverse
+        top: 0
+        margin-bottom: 20px
+        right: 0
+    .strong-list_one .strong-item:nth-child(2) .strong-item__num
+        margin-left: 0
+        margin-right: 8px
+    .strong-list_one .strong-item:nth-child(3)
+        top: 0
+        left: 0
+        margin-bottom: 20px
+        flex-direction: row-reverse
+    .strong-list_one .strong-item:nth-child(3) .strong-item__num
+        margin-left: 0
+        margin-right: 8px
+    .strong-list_one .strong-item:nth-child(4)
+        position: relative
+        top: 0
+        right: 0
+        margin-bottom: 20px
+        flex-direction: row-reverse
+    .strong-list_one .strong-item:nth-child(4) .strong-item__num
+        margin-left: 0
+        margin-right: 8px
+    .strong-list_two
+        width: 100%
+    .strong-list_two .strong-item:first-child
+        position: relative
+        top: 0
+        left: 0
+        margin-bottom: 20px
+    .strong-list_two .strong-item:first-child .strong-item__num
+        margin-right: 8px
+    .strong-list_two .strong-item:nth-child(2)
+        position: relative
+        top: 0
+        margin-bottom: 20px
+        left: 0
+    .strong-list_two .strong-item:nth-child(2) .strong-item__num
+        margin-right: 8px
+    .strong-list_two .strong-item:nth-child(3)
+        position: relative
+        top: 0
+        left: 0
+        margin-bottom: 20px
+    .strong-list_two .strong-item:nth-child(3) .strong-item__num
+        margin-right: 8px
+    .strong-list_two .strong-item:nth-child(4)
+        position: relative
+        top: 0
+        left: 0
+    .strong-list_two .strong-item:nth-child(4) .strong-item__num
+        margin-right: 8px
+@media (max-width: 768px)
+    .strong-list_one .strong-item__num
+        width: 34px
+        height: 34px
+    .strong-list_two .strong-item__num
+        width: 34px
+        height: 34px
+@media (max-width: 576px)
+    .strong
+        padding-top: 90px
+        padding-bottom: 80px
+    .strong-list_one .strong-item, .strong-list_two .strong-item
+        width: 100%
