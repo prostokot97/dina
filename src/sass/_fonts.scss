@@ -7,6 +7,7 @@
 			url('../fonts/Roboto-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Roboto Regular';
@@ -17,6 +18,7 @@
 			url('../fonts/Roboto-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Montserrat SemiBold';
@@ -26,6 +28,7 @@
 		url('../fonts/Montserrat-SemiBold.woff') format('woff'),
 		url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
 	font-weight: 600;
+	font-display: swap;
 	font-style: normal;
 }
 
@@ -38,6 +41,7 @@
 		url('../fonts/Montserrat-Medium.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -49,4 +53,5 @@
 		url('../fonts/Montserrat-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
+	font-display: swap;
 }

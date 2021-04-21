@@ -62,7 +62,27 @@ accordion.forEach(function (item) {
     }
     item.nextElementSibling.classList.toggle('faq-accordion__content_active');
   });
+});
+
+// Модалка заказа звонка
+let buttonModal = document.querySelectorAll(".open-callback");
+let modalCallback = document.querySelector(".modal");
+let closeModalCallback = document.querySelector(".modal__close");
+buttonModal.forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    modalCallback.classList.add("modal_active");
+  });
+});
+//buttonModal.addEventListener("click", function (e) {
+//  e.preventDefault();
+//  modalCallback.classList.add("modal_active");
+//})
+closeModalCallback.addEventListener("click", function (e) {
+  e.preventDefault();
+  modalCallback.classList.remove("modal_active");
 })
+
 // слайдеры
 const swiper1 = new Swiper('.swiper1-container', {
   // Optional parameters
