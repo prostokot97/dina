@@ -6,7 +6,7 @@
     max-height: 537px
     height: 100%
 .project__small-img
-    display: flex        
+    display: flex
 .project
     &__main
         display: flex
@@ -17,12 +17,12 @@
         flex-direction: column
         max-width: 268px
     & .smalls
-        max-width: 267px 
+        width: 267px
         &:last-child
             padding-left: 8px
 .pre__main
     padding-top: 8px
-    padding-left: 0px!important               
+    padding-left: 0px!important
 .project
     &__info
         display: flex
@@ -36,14 +36,14 @@
     &__dates
         display: flex
     &__greens
-          font-weight: 500
-          font-size: 16px
-          color: $green
-          font-family: 'Roboto'    
-          padding-left: 5px
+        font-weight: 500
+        font-size: 16px
+        color: $green
+        font-family: 'Roboto'
+        padding-left: 5px
     &__date
         font-size: 12px
-        padding-top: 3.1px   
+        padding-top: 3.1px
     &__title
         font-size: 18px
         margin-bottom: 13px
@@ -54,7 +54,7 @@
         width: 100%
     &__btn
         background: $violet
-        max-width: 335px  
+        max-width: 335px
         padding: 20px 26px 20px 16px
         color: #fff
         text-decoration: none
@@ -70,18 +70,18 @@
             z-index: 9
             right: 10%
             top: 34%
-.swiper-container 
-  width: 100%
-  height: auto
+.swiper-container
+    width: 100%
+    height: auto
 .project_prev:hover
-    border: 1px solid transparent  
+    border: 1px solid transparent
 .project_next:hover
-    border: 1px solid transparent     
+    border: 1px solid transparent
 .projects__title
     margin-top: 80px
-    margin-bottom: 60px   
+    margin-bottom: 60px
     position: relative
-    &::after 
+    &::after
         width: 46px
         height: 46px
         content: ''
@@ -91,3 +91,16 @@
         z-index: -1
         left: 25.1%
         top: -5px
+@media (max-width: 576px)
+    .project-categories
+        justify-content: space-around
+    .project-category
+        &:nth-child(1)
+            order: 0
+        &:nth-child(2)
+            order: 1
+        &:nth-child(4)
+            order: 2
+        &:nth-child(3)
+            order: 3
+            margin-top: 20px

@@ -61,3 +61,58 @@
             &_link
                 color: $green
                 text-decoration: underline
+@media (max-width: 1200px)
+    .news-block
+        &:nth-child(1), &:nth-child(2)
+            width: 100%
+        &:nth-child(3), &:nth-child(4)
+            display: none
+    .news-actual
+        margin-right: 30px
+@media (max-width: 992px)
+    .news-wrap
+        flex-wrap: wrap
+    .news-actual
+        width: 100%
+        margin-bottom: 20px
+        margin-right: 0
+    .news-block
+        &:nth-child(1), &:nth-child(2)
+            max-width: 350px
+    .news-other
+        height: auto
+        width: 100%
+@media (max-width: 768px)
+    .news-other
+        flex-wrap: nowrap
+    .news-actual
+        margin-bottom: 10px
+    .news-block
+        &:nth-child(1)
+            margin-right: 10px
+@media (max-width: 576px)
+    .news-actual
+        flex-wrap: wrap
+        height: auto
+        justify-content: center
+        position: relative
+        padding: 40px 30px 35px 30px
+    .news-actual__date
+        position: absolute
+        top: 17px
+        right: 9px
+    .news-actual-text
+        width: 100%
+        text-align: center
+    .news-actual__title
+        margin-bottom: 13px
+    .news-actual__description
+        margin-bottom: 20px
+    .news-actual__button
+        margin-left: auto
+        margin-right: auto
+    .news-block
+        height: auto
+        padding: 15px 9px 20px 9px
+    .news
+        padding-bottom: 0

@@ -27,4 +27,20 @@
                 height: 23px
                 background: $orange
                 border-radius: 50%
-    
+@media (max-width: 1200px)
+    .project__big
+        display: none
+    .project__content
+        max-width: 605px
+@media (max-width: 992px)
+    .projects__title
+        margin-top: 50px
+    .project-categories
+        justify-content: space-between
+    .project-category__link
+        font-size: 20px
+@media (max-width: 768px)
+    .project-category__link
+        font-size: 18px
+    .project-categories
+        flex-wrap: wrap

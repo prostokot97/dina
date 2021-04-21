@@ -5,23 +5,22 @@ let adaptiveMenu = document.querySelector(".header-mobile__button");
 let mobileMenu = document.querySelector(".mobile-menu");
 let content = document.querySelector(".content")
 let closeModal = document.querySelector(".mobile-menu__close");
-adaptiveMenu.addEventListener("click", function(e){
+adaptiveMenu.addEventListener("click", function (e) {
   e.preventDefault();
   this.classList.toggle("header-mobile__button_active");
   mobileMenu.classList.toggle("mobile-menu_active");
 });
-closeModal.addEventListener("click", function(e){
+closeModal.addEventListener("click", function (e) {
   mobileMenu.classList.toggle("mobile-menu_active");
   adaptiveMenu.classList.toggle("header-mobile__button_active");
 })
 // категории
 let categoriesMenu = document.querySelector(".navigation-wrap__link");
 let categories = document.querySelectorAll(".menu-item");
-categoriesMenu.addEventListener("click", function(e)
-{
+categoriesMenu.addEventListener("click", function (e) {
   e.preventDefault();
   categoriesMenu.classList.toggle("navigation-wrap__link_active")
-  categories.forEach(function(item){
+  categories.forEach(function (item) {
     item.classList.toggle("mobile-hidden");
   })
 })
@@ -30,37 +29,34 @@ categoriesMenu.addEventListener("click", function(e)
 let tabsBtn = document.querySelectorAll('.project-category');
 let tabsItems = document.querySelectorAll('.project-slider');
 
-tabsBtn.forEach(function(item){
-  item.addEventListener('click', function(){
+tabsBtn.forEach(function (item) {
+  item.addEventListener('click', function () {
     let currentBtn = item;
     let tabId = currentBtn.getAttribute("data-tab");
     let currentTab = document.querySelector(tabId);
-    if( ! currentBtn.classList.contains('project-category_active'))
-    {
-      tabsBtn.forEach(function(item){
+    if (!currentBtn.classList.contains('project-category_active')) {
+      tabsBtn.forEach(function (item) {
         item.classList.remove('project-category_active');
       });
-      tabsItems.forEach(function(item){
+      tabsItems.forEach(function (item) {
         item.classList.remove('project-slider_active');
       });
       currentBtn.classList.add('project-category_active');
       currentTab.classList.add('project-slider_active');
     }
-    
+
   });
 });
 // document.querySelector(".project-category").click();
 
 // аккордеон
 let accordion = document.querySelectorAll('.faq-accordion__item');
-accordion.forEach(function(item){
-  item.addEventListener('click', function(){
-    if(item.classList.contains('faq-accordion__item_active'))
-    {
+accordion.forEach(function (item) {
+  item.addEventListener('click', function () {
+    if (item.classList.contains('faq-accordion__item_active')) {
       item.classList.remove('faq-accordion__item_active');
     }
-    else
-    {
+    else {
       item.nextElementSibling.classList.remove('faq-accordion__content_active')
       item.classList.toggle('faq-accordion__item_active');
     }
@@ -135,7 +131,7 @@ const swiper2 = new Swiper('.swiper2-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   grabCursor: true,
-  
+
   navigation: {
     nextEl: '.reviews_next',
     prevEl: '.reviews_prev',
@@ -151,7 +147,7 @@ const swiper3 = new Swiper('.swiper3-container', {
   grabCursor: true,
   centeredSlides: true,
   slideActiveClass: "about__slidesas-active",
-  
+
   navigation: {
     nextEl: '.about_prev3',
     prevEl: '.about_next3',
@@ -165,9 +161,9 @@ const swiper4 = new Swiper('.swiper4-container', {
   slidesPerView: 5,
   spaceBetween: 20,
   grabCursor: true,
-  
- 
-  
+
+
+
   navigation: {
     nextEl: '.history_prev3',
     prevEl: '.history_next3',
@@ -184,12 +180,38 @@ const swiper5 = new Swiper('.command-slider', {
     nextEl: '.command__arrow_next',
     prevEl: '.command__arrow_prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 3
+    }
+  }
 });
 const swiper6 = new Swiper(".history-slider", {
   loop: true,
+  spaceBetween: 15,
   slidesPerView: 5,
   navigation: {
     nextEl: '.history__arrow_next',
     prevEl: '.history__arrow_prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 4
+    },
+    1200: {
+      spaceBetween: 15
+    }
+  }
 });
