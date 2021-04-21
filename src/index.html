@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/src/css/swiper-bundle.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
 	<title>Dina Cociug</title>
 </head>
 
@@ -224,7 +225,8 @@
 								<!-- /.navigation-item__link -->
 							</li>
 							<!-- /.navigation-item -->
-							<li class="navigation-item"><a href="" class="navigation-item__link it-yellow">Интернет-магазин</a>
+							<li class="navigation-item"><a href="category-shop.html"
+									class="navigation-item__link it-yellow">Интернет-магазин</a>
 								<!-- /.navigation-item__link -->
 							</li>
 							<!-- /.navigation-item -->
@@ -253,7 +255,7 @@
 				<div class="container">
 					<div class="categories-wrap">
 						<div class="categories-wrap_side">
-							<div class="categories-tile">
+							<div class="categories-tile" onclick="location.href='page-horeca.html'">
 								<div class="categories-text">
 									<h3 class="categories-text__title">Horeca</h3>
 									<span class="categories-text__description">
@@ -264,7 +266,7 @@
 									<img src="img/index/categories/Horeca.png" alt="" class="categories__img">
 								</div>
 							</div>
-							<div class="categories-tile">
+							<div class="categories-tile" onclick="location.href='page-climat.html'">
 								<div class="categories-text">
 									<h3 class="categories-text__title">Climat</h3>
 									<span class="categories-text__description">
@@ -275,7 +277,7 @@
 									<img src="img/index/categories/Climat.png" alt="" class="categories__img">
 								</div>
 							</div>
-							<div class="categories-tile">
+							<div class="categories-tile" onclick="location.href='page-retail.html'">
 								<div class="categories-text">
 									<h3 class="categories-text__title">Retail</h3>
 									<span class="categories-text__description">
@@ -286,7 +288,7 @@
 									<img src="img/index/categories/Retail.png" alt="" class="categories__img">
 								</div>
 							</div>
-							<div class="categories-tile">
+							<div class="categories-tile" onclick="location.href='page-promholod.html'">
 								<div class="categories-text">
 									<h3 class="categories-text__title">Promholod</h3>
 									<span class="categories-text__description">
@@ -299,7 +301,7 @@
 							</div>
 						</div>
 
-						<div class=" categories-tile_shop">
+						<div class=" categories-tile_shop" onclick="location.href='category-shop.html'">
 							<div class="categories-text">
 								<h3 class="categories-text__title">Интернет-магазин</h3>
 							</div>
@@ -987,8 +989,9 @@
 			</form>
 		</div>
 	</div>
-	<script src="scripts/swiper-bundle.js"></script>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/maps.min.js"></script>
+	<script src="scripts/swiper-bundle.min.js"></script>
+	<script src="scripts/script.min.js"></script>
 	<script>
 		document.querySelector(".project-category").click();
 

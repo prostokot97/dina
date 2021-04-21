@@ -16,6 +16,7 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
         border-radius: 20px
         position: relative
+        cursor: pointer
         &:first-child
             height: 213px
             width: 502px
@@ -29,6 +30,10 @@
                 height: 185px
                 display: block
                 z-index: 0
+            &:hover
+                background: $orange
+                .categories-text__title, .categories-text__description
+                    color: #fff
         &:nth-child(2)
             height: 213px
             width: 394px
@@ -42,6 +47,10 @@
                 height: 191px
                 display: block
                 z-index: 0
+            &:hover
+                background: $green
+                .categories-text__title, .categories-text__description
+                    color: #fff
         &:nth-child(3)
             height: 213px
             width: 373px
@@ -52,6 +61,10 @@
                 height: 216px
                 top: 0
                 right: 5px
+            &:hover
+                background: $violet
+                .categories-text__title, .categories-text__description
+                    color: #fff
         &:nth-child(4)
             height: 213px
             width: 523px
@@ -62,6 +75,10 @@
                 height: 192px
                 top: 21px
                 right: 0
+            &:hover
+                background: $violet
+                .categories-text__title, .categories-text__description
+                    color: #fff
         &_shop
             padding: 61px 20px
             display: flex
@@ -71,6 +88,9 @@
             width: 284px
             height: 436px
             position: relative
+            border: none
+            background: #fff
+            cursor: pointer
             & .categories-img
                 width: 268px
                 height: 237px
@@ -79,13 +99,10 @@
                 left: 8px
                 right: 8px
             &:hover
-                background: $violet
+                background: yellow
                 .categories-text__title
-                    color: #fff
-        &:hover
-            background: $violet
-            .categories-text__title, .categories-text__description
-                color: #fff
+                    color: $violet
+
     &-text
         &__title
             font-size: 36px

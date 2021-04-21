@@ -840,6 +840,15 @@ a {
   background: #FBE673;
 }
 
+.swiper-button-next:before {
+  top: -4px;
+}
+
+.swiper-button-prev:before {
+  top: -4px;
+  left: -20px;
+}
+
 .categories {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -864,6 +873,7 @@ a {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .categories-tile:first-child {
@@ -883,6 +893,14 @@ a {
   z-index: 0;
 }
 
+.categories-tile:first-child:hover {
+  background: #F19264;
+}
+
+.categories-tile:first-child:hover .categories-text__title, .categories-tile:first-child:hover .categories-text__description {
+  color: #fff;
+}
+
 .categories-tile:nth-child(2) {
   height: 213px;
   width: 394px;
@@ -900,6 +918,14 @@ a {
   z-index: 0;
 }
 
+.categories-tile:nth-child(2):hover {
+  background: #8AC99E;
+}
+
+.categories-tile:nth-child(2):hover .categories-text__title, .categories-tile:nth-child(2):hover .categories-text__description {
+  color: #fff;
+}
+
 .categories-tile:nth-child(3) {
   height: 213px;
   width: 373px;
@@ -912,6 +938,14 @@ a {
   height: 216px;
   top: 0;
   right: 5px;
+}
+
+.categories-tile:nth-child(3):hover {
+  background: #8B86BC;
+}
+
+.categories-tile:nth-child(3):hover .categories-text__title, .categories-tile:nth-child(3):hover .categories-text__description {
+  color: #fff;
 }
 
 .categories-tile:nth-child(4) {
@@ -928,6 +962,14 @@ a {
   right: 0;
 }
 
+.categories-tile:nth-child(4):hover {
+  background: #8B86BC;
+}
+
+.categories-tile:nth-child(4):hover .categories-text__title, .categories-tile:nth-child(4):hover .categories-text__description {
+  color: #fff;
+}
+
 .categories-tile_shop {
   padding: 61px 20px;
   display: flex;
@@ -937,6 +979,9 @@ a {
   width: 284px;
   height: 436px;
   position: relative;
+  border: none;
+  background: #fff;
+  cursor: pointer;
 }
 
 .categories-tile_shop .categories-img {
@@ -949,19 +994,11 @@ a {
 }
 
 .categories-tile_shop:hover {
-  background: #8B86BC;
+  background: yellow;
 }
 
 .categories-tile_shop:hover .categories-text__title {
-  color: #fff;
-}
-
-.categories-tile:hover {
-  background: #8B86BC;
-}
-
-.categories-tile:hover .categories-text__title, .categories-tile:hover .categories-text__description {
-  color: #fff;
+  color: #8B86BC;
 }
 
 .categories-text__title {
@@ -2081,6 +2118,10 @@ a {
   padding: 0 15px;
 }
 
+.proekt-arrows {
+  width: 100%;
+}
+
 @media (max-width: 1200px) {
   .proekt-wrapper {
     justify-content: center;
@@ -2710,7 +2751,7 @@ a {
 
 .navigation-item__link:hover, .navigation-item__link_active {
   background: #fff;
-  color: #737373;
+  color: #737373 !important;
   transition: all 0.3s;
   box-shadow: 0px 4px 10px #8ac99e6c;
 }
@@ -2722,19 +2763,19 @@ a {
 .it-orange:hover {
   box-shadow: 0px 4px 10px rgba(241, 146, 100, 0.4);
   border-radius: 20px;
-  color: #757575;
+  color: #fff;
 }
 
 .it-violet:hover {
   box-shadow: 0px 4px 10px #8b86bc70;
   border-radius: 20px;
-  color: #757575;
+  color: #fff;
 }
 
 .it-green:hover {
   box-shadow: 0px 4px 10px #8ac99e6c;
   border-radius: 20px;
-  color: #757575;
+  color: #fff;
 }
 
 .it-yellow:hover {
@@ -3186,7 +3227,7 @@ a {
 
 .product__title {
   margin: 0;
-  font-size: 23px;
+  font-size: 21px;
 }
 
 .productoviy__btn {
@@ -3893,6 +3934,12 @@ a {
   margin-top: 0;
 }
 
+.reviews-arrows .swiper-button-prev:before {
+  top: -67px;
+  left: auto;
+  right: 121px;
+}
+
 .submission {
   display: flex;
   margin-top: 100px;
@@ -3922,7 +3969,7 @@ input.organizations {
   padding: 10px;
   padding-left: 40px;
   border-bottom: 1px solid #C9C9C9;
-  width: 210px;
+  width: 260px;
 }
 
 input.name__man {
@@ -3934,7 +3981,7 @@ input.name__man {
   padding: 10px;
   padding-left: 40px;
   border-bottom: 1px solid #C9C9C9;
-  width: 210px;
+  width: 260px;
 }
 
 input.tel__phone {
@@ -3946,7 +3993,7 @@ input.tel__phone {
   padding: 10px;
   padding-left: 40px;
   border-bottom: 1px solid #C9C9C9;
-  width: 210px;
+  width: 260px;
 }
 
 input.email__user {
@@ -3958,7 +4005,7 @@ input.email__user {
   padding: 10px;
   padding-left: 40px;
   border-bottom: 1px solid #C9C9C9;
-  width: 210px;
+  width: 260px;
 }
 
 input.oborudovanie {
@@ -4932,6 +4979,7 @@ input.info {
   justify-content: space-between;
   align-content: center;
   padding-top: 26px;
+  padding-bottom: 26px;
   border-top: 0.2px solid #b0b0b060;
 }
 
@@ -5185,7 +5233,6 @@ input:checked ~ .tab-content {
 }
 
 .shop-card {
-  width: 220px;
   background: #FFFFFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
