@@ -1,52 +1,67 @@
-.services
+.phases
     &__title
-        margin-top: 0px
         margin-bottom: 50px
-        position: relative
-        &::after 
-            width: 46px
-            height: 46px
-            content: ''
-            position: absolute
-            background: $green
-            border-radius: 100px
-            z-index: -1
-            left: 23.7%
-            top: -6px
+        display: inline-block
     &-wrap
         display: flex
         justify-content: space-between
-    &__block
-        width: 185px
+    &-block
+        width: 186px
         height: 217px
-        padding-top: 40px
-        text-align: center
+        display: flex
+        flex-direction: column
+        align-items: center
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
         border-radius: 20px
-        &:nth-child(3), &:last-child
-            & .services__icon
+        padding-top: 40px
+        margin-bottom: 20px
+        &:first-child
+            .phases__img
+                margin-bottom: 25px
+        &:nth-child(2)
+            .phases__img
+                margin-bottom: 25px
+            .phases__name
                 margin-bottom: 17px
-        &:nth-child(2), 
-            & .services__name
-                margin-bottom: 22px
-        &:nth-child(4)
-            & .services__name
-                margin-bottom: 22px
         &:nth-child(3)
-            & .services__name
+            .phases__img
+                margin-bottom: 15px
+            .phases__name
                 margin-bottom: 4px
+        &:nth-child(4)
+            .phases__img
+                margin-bottom: 26px
+            .phases__name
+                margin-bottom: 17px
         &:nth-child(5)
-            & .services__name
-                margin-bottom: 1px
-            & .services__text
+            .phases__img
+                margin-bottom: 25px
+            .phases__name
+                margin-bottom: 7px
+            .phases__description
                 font-size: 13px
+        &:nth-child(6)
+            .phases__img
+                margin-bottom: 17px
+    &__img
+        width: 51px
     &__name
         font-family: "Montserrat Medium"
         font-size: 20px
-        line-height: 137.69%
-    &__icon
-        width: 51px
-        margin-bottom: 26px
-    &__subname
-        font-family: "Montserrat Light"
-        font-size: 16px
+        text-align: center
+    &__description
+        text-align: center
+@media (max-width: 1200px)
+    .phases-wrap
+        flex-wrap: wrap
+    .phases-block:last-child
+        margin-left: auto
+        margin-right: auto
+@media (max-width: 992px)
+    .phases-block:last-child
+        margin: 0
+@media (max-width: 769px)
+    .phases-title-wrap
+        text-align: center
+    .phases-wrap
+        justify-content: space-around

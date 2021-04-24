@@ -1,84 +1,187 @@
-.rev
-    &__main
-        display: flex
-        justify-content: space-around
-    &__content
-        max-width: 438px
-        width: 100%
-        padding-left: 40px
-        padding-right: 30px
-        display: flex
-        flex-direction: column
-        justify-content: center
-    &__item
-        display: flex
-        max-width: 657px
-        &:last-child
-            padding-left: 10px
-    &__img
-        display: flex
-    &__date
-        text-align: right
-    &__dates
-        font-size: 18px
-        font-weight: 600
-    &__text
-        font-size: 18px
-        line-height: 22px
-.rev
-    &__slides
-        background: #FFFFFF
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
-        border-radius: 8px
-        padding-top: 15px
-        padding-bottom: 15px
-
-    &__container
-        padding-top: 10px
-        padding-bottom: 10px
-    &__imgs
-        max-width: 310px
-        width: 100%
-    & .swiper2
-        padding: 0px 15px
+//.rev
+//	&__main
+//		display: flex
+//		justify-content: space-around
+//		&__content
+//			max-width: 438px
+//			width: 100%
+//			padding-left: 40px
+//			padding-right: 30px
+//			display: flex
+//			flex-direction: column
+//			justify-content: center
+//		&__item
+//			display: flex
+//			max-width: 657px
+//			&:last-child
+//				padding-left: 10px
+//		&__img
+//			display: flex
+//		&__date
+//			text-align: right
+//		&__dates
+//			font-size: 18px
+//			font-weight: 600
+//		&__text
+//			font-size: 18px
+//			line-height: 22px
+//.rev
+//	&__slides
+//		background: #FFFFFF
+//		box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+//		border-radius: 8px
+//		padding-top: 15px: 310px
+//		width: 100%
+//		& .swiper2
+//			padding: 0px 15px
 
 .reviews__btns
-    text-align: center
-    margin-top: 60px
-    margin-bottom: 60px
-    & .btn
-        color: $violet
-        background: transparent
-        border: 1px solid $violet
-        padding: 23px 72px 23px 72px
-        font-weight: 500
+	text-align: center
+	margin-top: 60px
+	margin-bottom: 60px
+	& .btn
+		color: $violet
+		background: transparent
+		border: 1px solid $violet
+		padding: 23px 72px 23px 72px
+		font-weight: 500
 .swiper2-container
-    padding-left: 15px
-    padding-right: 15px
-    z-index: 1
+	padding-left: 15px
+	padding-right: 15px
+	padding-top: 15px
+	padding-bottom: 25px
+	z-index: 1
 .violet__btn
-    &:hover
-        background: $violet
-        color: #fff
+	&:hover
+		background: $violet
+		color: #fff
+
+//.reviews__title
+//	margin-top: 90px
+//	position: relative
+//	z-index: 9
+//	margin-bottom: 31px
+//	&::after
+//		width: 46px
+//		height: 46px
+//		content: ''
+//		position: absolute
+//		background: $green
+//		border-radius: 100px
+//		z-index: -1
+//		left: 11.8%
+//		top: -5px
+//		&_horeca
+//			margin-top: 0
+//.reviews-arrows
+//	& .swiper-button-prev:before
+//		top: -67px
+//		left: auto
+//		right: 121px
+
+//		padding-bottom: 15px
+
+//		&__container
+//			padding-top: 10px
+//			padding-bottom: 10px
+//		&__imgs
+//			max-width
 .reviews__title
-    margin-top: 90px
-    position: relative
-    z-index: 9
-    margin-bottom: 31px
-    &::after
-        width: 46px
-        height: 46px
-        content: ''
-        position: absolute
-        background: $green
-        border-radius: 100px
-        z-index: -1
-        left: 11.8%
-        top: -5px
-    &_horeca
-        margin-top: 0
+	margin-bottom: 20px
+.reviews-slider-wrap
+	overflow: hidden
+	margin-bottom: 40px
+.reviews-slide
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+	border-radius: 8px
+	display: flex
+	justify-content: space-between
+	padding: 21px 23px 22px 67px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 30px
+		left: 15px
+		width: 30px
+		height: 32px
+		background: url('../img/page-horeca/quote.png')
+.reviews-slide-text
+	padding-top: 27px
+	padding-bottom: 12px
+	padding-right: 45px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+.reviews-slide-img
+	display: flex
+.reviews-text__title
+	font-size: 22px
+	font-family: "Montserrat Medium"
+.reviews-text__description
+	width: 442px
+.reviews-text__date
+	font-family: "Montserrat Medium"
+	text-align: right
+.reviews__img:first-child
+	margin-right: 10px
 .reviews-arrows
-    & .swiper-button-prev:before
-        top: -67px
-        left: auto
-        right: 121px
+	order: 0
+	display: flex
+	justify-content: flex-end
+	margin-top: -63px
+.horeca-reviews
+	width: 43px
+	height: 43px
+	border: 1px solid $orange
+	border-radius: 50%
+	display: flex
+	align-items: center
+	justify-content: center
+	cursor: pointer
+	& img
+		width: 18px
+		height: 18px
+.reviews-arrows_left
+	margin-right: 8px
+.reviews-arrows_right
+	margin-left: 8px
+@media (max-width: 1200px)
+	.reviews-text__description
+		width: 380px
+	.reviews-slide-text
+		padding-top: 0
+		padding-bottom: 0
+@media (max-width: 992px)
+	.reviews-slide
+		flex-wrap: wrap
+		padding: 55px 10px 20px 10px
+		&::before
+			top: 15px
+	.reviews-slider-wrap
+		order: 0
+		margin-bottom: 5px
+	.reviews-arrows
+		order: 1
+		margin-top: 0
+		justify-content: center
+	.reviews-text__date
+		margin-bottom: 20px
+	.reviews-slide-text
+		width: 100%
+		padding-right: 0
+	.reviews-text__description
+		width: 100%
+@media (max-width: 768px)
+	.reviews-slide
+	.reviews-text__title
+		text-align: center
+		margin-bottom: 16px
+	.reviews-text__description
+		text-align: center
+		margin-bottom: 15px
+@media (max-width: 576px)
+	.reviews-slide-img
+		flex-direction: column
+	.reviews__img:first-child
+		margin-right: 0px

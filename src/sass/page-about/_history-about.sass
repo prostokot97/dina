@@ -6,69 +6,79 @@
         display: flex
         flex-direction: column
         text-align: center
-        padding-bottom: 15px 
+        padding-bottom: 15px
     &__title
         position: relative
-        &::after 
-            width: 46px
-            height: 46px
-            content: ''
-            position: absolute
-            background: $orange
-            border-radius: 100px
-            z-index: -1
-            left: 35%
-           
+        display: inline-block
+        //&::after
+        //    width: 46px
+        //    height: 46px
+        //    content: ''
+        //    position: absolute
+        //    background: $orange
+        //    border-radius: 100px
+        //    z-index: -1
+        //    left: 35%
+
     &__tile
         font-size: 48px
-        font-family: 'Montserrat SemiBold'  
+        font-family: 'Montserrat SemiBold'
         font-weight: 600
         margin-top: -30px
         margin-bottom: 15px
     &__text
-        padding: 0px 7px   
-        font-size: 14px 
+        padding: 0px 7px
+        font-size: 14px
         color: #757575
     &__about
-        margin-bottom: 140px    
+        margin-bottom: 140px
 .swiper4-container
     padding-top: 50px
-    padding-bottom: 50px  
+    padding-bottom: 50px
     margin-top: 50px
 .history_prev3
     top: 60px
     &::before
         position: absolute
-        left: 41.5%  
+        left: 41.5%
         border: 1px solid $violet
         content: url('../img/page-about/team-about/left__arrows.svg')
     &:hover::before
         position: absolute
-        left: 41.5%   
+        left: 41.5%
         content: url('../img/page-about/team-about/left__arrows.svg')
-        transform: translateX(-4px)    
+        transform: translateX(-4px)
 .history_next3
     top: 60px
     &::before
         position: absolute
-        left: 55%     
-        border: 1px solid $violet   
-        content: url('../img/page-about/team-about/right__arrows.svg')!important   
+        left: 55%
+        border: 1px solid $violet
+        content: url('../img/page-about/team-about/right__arrows.svg')!important
     &:hover::before
         position: absolute
-        left: 55%   
-        content: url('../img/page-about/team-about/right__arrows.svg')!important   
-        transform: translateX(4px)   
+        left: 55%
+        content: url('../img/page-about/team-about/right__arrows.svg')!important
+        transform: translateX(4px)
 
 .colors
     &__1
-        color: $violet   
+        color: $violet
     &__2
-        color: $green          
+        color: $green
     &__3
-        color: $orange  
+        color: $orange
     &__4
-        color: $yellow  
+        color: $yellow
     &__5
-        color: $violet  
-                  
+        color: $violet
+
+@media (max-width: 768px)
+    .history-title-wrap
+        text-align: center
+    .history__title::after
+        width: 30px
+        height: 30px
+        right: -10px
+        top: -5px
+        left: auto

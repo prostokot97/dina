@@ -1,49 +1,49 @@
 @media (max-width:767px)
     .about
-      &__big
+    &__big
         display: flex
         flex-direction: column
-      &__t
-          padding: 0px!important
-      &__t2
-          padding: 0px!important
-      &__image
-          margin: 0px!important
-      &__service
-          display: flex
-          flex-direction: column
-          margin: 0px!important   
-      &__table1
-          margin: 10px 0px!important    
+    &__t
+        padding: 0px!important
+    &__t2
+        padding: 0px!important
+    &__image
+        margin: 0px!important
+    &__service
+        display: flex
+        flex-direction: column
+        margin: 0px!important
+    &__table1
+        margin: 10px 0px!important
     .services-tab
         padding: 20px 10px!important
-        text-align: center      
-.about__big 
+        text-align: center
+.about__big
     display: flex
 .about__image
     margin-top: -100px
 .about__text
-    flex: 60% 0  
+    flex: 60% 0
 .about__t
     padding-left: 40px
     max-width: 618px
 .about__t2
-    padding-left: 40px  
+    padding-left: 40px
 .about__title
-    margin-bottom: 58px   
-    margin-top: 44px 
+    margin-bottom: 58px
+    margin-top: 44px
     position: relative
-    &::after 
-        width: 46px
-        height: 46px
-        content: ''
-        position: absolute
-        // background: $green
-        border-radius: 100px
-        z-index: -1
-        left: 8.1%
-        top: -7px
-
+    display: inline-block
+    //&::after
+    //    width: 46px
+    //    height: 46px
+    //    content: ''
+    //    position: absolute
+    //    // background: $green
+    //    border-radius: 100px
+    //    z-index: -1
+    //    left: 8.1%
+    //    top: -7px
 
 .about__service
     display: flex
@@ -64,7 +64,7 @@
         border-radius: 20px
     &:nth-child
         margin-left: 0
-        
+
     &-bg
         top: 5px
         left: 5px
@@ -76,6 +76,38 @@
         display: block
         border-radius: 20px
     & .green
-        background: $green !important    
+        background: $green !important
     & .violet
-        background: $violet !important    
+        background: $violet !important
+@media (max-width: 1200px)
+    .about__service
+        margin-top: 0
+@media (max-width: 992px)
+    .about__big
+        align-items: center
+    .about__service
+        flex-wrap: wrap
+        justify-content: space-around
+    .services-tab
+        width: 310px
+    .services
+        margin-bottom: 30px
+        margin-left: 0
+    .about__t, .about__t2
+        padding-left: 0
+@media (max-width: 768px)
+    .about-text__title:after
+        width: 30px
+        height: 30px
+        right: -13px
+        left: auto
+        top: -7px
+    .about__big
+        flex-wrap: wrap
+    .about__text
+        flex: 100% 0
+    .about__image
+        margin-top: 0
+@media (max-width: 576px)
+    .services-tab
+        width: 100%

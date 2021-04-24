@@ -35,6 +35,7 @@
             border-radius: 20px
             margin-top: 8px
             cursor: pointer
+            font-family: "Montserrat Medium"
             &:first-child
                 margin-top: 0
         &__content
@@ -48,4 +49,20 @@
             display: none
             &_active
                 display: block
-            
+@media (max-width: 1200px)
+    .faq-accordion__item
+        width: 100%
+    .faq-accordion__content
+        width: 95%
+@media (max-width: 768px)
+    .faq-accordion__item
+        padding: 15px 20px
+        font-size: 14px
+    .faq-accordion__content
+        padding: 18px 17px 14px 17px
+        font-size: 14px
+    .faq__title:after
+        width: 30px
+        height: 30px
+        top: -5px
+        right: -10px

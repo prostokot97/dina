@@ -49,6 +49,8 @@
 	padding: 0 15px
 .proekt-arrows
 	width: 100%
+.proekt__arrow_prev, .proekt__arrow_next
+	display: none
 @media (max-width: 1200px)
 	.proekt-wrapper
 		justify-content: center
@@ -61,12 +63,16 @@
 		width: 488px
 	.project .smalls
 		width: 202px !important
+	.proekt_next, .proekt_prev
+		font-size: 14px
 @media (max-width: 768px)
 	.proekt-wrapper
 		flex-direction: column-reverse
 		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1)
 		border-radius: 20px
 		padding: 14px 14px 21px 14px
+	.projects__title
+		display: inline-block
 	.proekt-column:last-child .proekt-info
 		padding: 0
 		margin-bottom: 20px
@@ -89,6 +95,19 @@
 		padding-left: 0 !important
 	.proekt-column:last-child
 		width: 100%
+	.proekt_prev, .proekt_next
+		display: none
+	.proekt-arrows
+		margin-top: 10px
+		justify-content: center
+	.proekt__arrow_prev, .proekt__arrow_next
+		display: flex
+	.proekt__arrow_prev
+		margin-right: 10px
+	.proekt__arrow_next
+		margin-left: 10px
 @media (max-width: 576px)
 	.swiper1-container, .swiper11-container, .swiper12-container, .swiper13-container
 		padding: 0
+	.proekt_next, .proekt_prev
+		font-size: 12px

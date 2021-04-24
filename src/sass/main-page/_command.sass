@@ -3,10 +3,10 @@
     padding-bottom: 87px
     &-container
         position: relative
-
+    &-title-wrap
+        text-align: center
     &__title
-        display: block
-        max-width: 346px
+        display: inline-block
         margin-left: auto
         margin-right: auto
         position: relative
@@ -128,3 +128,12 @@
         height: 122px
     .command-name
         font-size: 16px
+    .command-title-wrap
+        text-align: center
+    .command__title
+        display: inline-block
+    .command__title::before
+        width: 30px
+        height: 30px
+        top: -3px
+        right: -10px

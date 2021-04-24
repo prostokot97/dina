@@ -94,8 +94,8 @@ const swiper1 = new Swiper('.swiper1-container', {
   observer: true,
   observeParents: true,
   navigation: {
-    nextEl: '#swiperNext1',
-    prevEl: '#swiperPrev1',
+    nextEl: '.next_1',
+    prevEl: '.prev_1',
   },
 });
 
@@ -109,9 +109,9 @@ const swiper11 = new Swiper('.swiper11-container', {
   observer: true,
   observeParents: true,
   navigation: {
-    nextEl: '#swiperNext11',
-    prevEl: '#swiperPrev11',
-  },
+    nextEl: '.next_11',
+    prevEl: '.prev_11',
+  }
 });
 
 const swiper12 = new Swiper('.swiper12-container', {
@@ -124,8 +124,8 @@ const swiper12 = new Swiper('.swiper12-container', {
   observer: true,
   observeParents: true,
   navigation: {
-    nextEl: '#swiperNext12',
-    prevEl: '#swiperPrev12',
+    nextEl: '.next_12',
+    prevEl: '.prev_12',
   },
 });
 
@@ -139,8 +139,8 @@ const swiper13 = new Swiper('.swiper13-container', {
   observer: true,
   observeParents: true,
   navigation: {
-    nextEl: '#swiperNext13',
-    prevEl: '#swiperPrev13',
+    nextEl: '.next_13',
+    prevEl: '.prev_13',
   },
 });
 
@@ -151,10 +151,9 @@ const swiper2 = new Swiper('.swiper2-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   grabCursor: true,
-
   navigation: {
-    nextEl: '.reviews_next',
-    prevEl: '.reviews_prev',
+    nextEl: '.reviews-arrows_right',
+    prevEl: '.reviews-arrows_left',
   },
 });
 

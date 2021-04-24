@@ -70,10 +70,20 @@ li span
 		right: -30px
 		top: 0px
 		transition: 0.3s
-
+textarea
+	outline: none
+	--webkit-appearance: none
+	padding-left: 15px
+	font-size: 14px
+	color: #AEAEAE
 .wrapper
 	position: relative
 	overflow-y: hidden
+.desktop-hidden
+	display: none !important
+@media (max-width: 992px)
+	.desktop-hidden
+		display: flex !important
 .mobile-menu
 	position: fixed
 	right: 0
@@ -185,6 +195,8 @@ li span
 	.container
 		width: 960px
 @media (max-width: 992px)
+	.mobile-hidden
+		display: none !important
 	.container
 		width: 720px
 @media (max-width: 768px)
@@ -193,7 +205,6 @@ li span
 @media (max-width: 576px)
 	.container
 		width: 90%
-
 .subm__wrapper
 	width: 1250px
 	margin-left: auto
@@ -268,18 +279,34 @@ h1
 	color: #fff
 	font-weight: 600
 	line-height: 110.69%
-@media (max-width:768px)
-	h1
-		font-size: 24px
-	h2
-		font-size: 24px!important
 
 h2
 	color: #252525
 	font-size: 44px
 	line-height: 115.7%
 	font-weight: 600
+	margin-top: 0
 	font-family: 'Montserrat SemiBold'
+	position: relative
+	display: inline-block
+	&::after
+		position: absolute
+		content: ''
+		width: 46px
+		height: 46px
+		top: -5px
+		right: -10px
+		border-radius: 50%
+		display: block
+		z-index: -1
+@media (max-width:768px)
+	h1
+		font-size: 24px
+	h2
+		font-size: 24px!important
+		&::after
+			width: 30px
+			height: 30px
 h4
 	color: #252525
 	font-size: 24px
@@ -320,3 +347,14 @@ a
 .swiper-button-prev:before
 	top: -4px
 	left: -20px
+
+.horeca-input
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: 5px
+		left: 10px
+		width: 14px
+		height: 14px
+		background: red

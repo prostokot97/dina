@@ -9,14 +9,20 @@
     margin-top: 50px
     margin-bottom: 60px
     position: relative
-    &::after 
+    display: inline-block
+    &::after
         width: 46px
         height: 46px
         content: ''
         position: absolute
-        background: $green
-        border-radius: 100px
+        //background: $green
+        border-radius: 50%
         z-index: -1
         // left: 62.1%
-        top: -5px     
-        
+        top: -5px
+@media (max-width: 768px)
+    .partners__title::after
+        width: 30px
+        height: 30px
+        right: -10px
+        top: -5px

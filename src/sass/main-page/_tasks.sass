@@ -7,6 +7,8 @@
     position: relative
     display: block
     z-index: 5
+    margin-top: -100px
+    background: #fff
     &s
         padding-top: 50px
         padding-bottom: 38px
@@ -25,3 +27,20 @@
     &:last-child
         & .task__content
             border: 1px solid $green
+@media (max-width: 1200px)
+    .task
+        width: 312px
+    .task__content
+        padding: 40px 30px 35px 30px
+@media (max-width: 992px)
+    .tasks-wrap
+        justify-content: space-around
+        flex-wrap: wrap
+    .task:last-child
+        margin-top: 10px
+@media (max-width: 768px)
+    .task:nth-child(2)
+        margin-top: 10px
+    .task__content
+        padding: 20px 30px 20px 30px
+        height: 88.8px

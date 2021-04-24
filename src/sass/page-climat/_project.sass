@@ -86,11 +86,16 @@
         height: 46px
         content: ''
         position: absolute
-        background: $green
+        //background: $green
         border-radius: 100px
         z-index: -1
-        left: 25.1%
+@media (max-width: 768px)
+    .projects__title:after
+        width: 30px
+        height: 30px
+        right: -10px
         top: -5px
+        left: auto
 @media (max-width: 576px)
     .project-categories
         justify-content: space-around

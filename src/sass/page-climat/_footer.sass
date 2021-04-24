@@ -7,7 +7,7 @@
         border-top: 1px solid #8b86bc71
         padding-top: 30px
     &__btn
-        margin-block: auto    
+        margin-block: auto
     &__info
         max-width: 223px
         width: 100%
@@ -20,14 +20,14 @@
         list-style: none
         padding: 0
     &__btns
-        padding: 13px 22px 14px 22px   
-        border-radius: 15px  
-        background: $violet
+        padding: 13px 22px 14px 22px
+        border-radius: 15px
+        //background: $violet
         &:hover
-        box-shadow: 0px 4px 10px #8b86bc70!important
+            box-shadow: 0px 4px 10px #8b86bc70!important
     &__content
         max-width: 213px
-        width: 100% 
+        width: 100%
         display: flex
         flex-direction: column
     &__title
@@ -37,8 +37,8 @@
         & a:hover
             color: $violet
         &::before
-            content: url('../img/Submissions/envelope.svg')
-            position: absolute 
+            content: url('../img/page-climat/Submissions/envelope.svg')
+            position: absolute
             left: -25px
             top: 2px
         &::after
@@ -49,8 +49,8 @@
             z-index: 99
             content: ''
             bottom: -4px
-            transition: all 0.3s  
-            left: 0  
+            transition: all 0.3s
+            left: 0
         &:hover::after
             width: 65%
             height: 1.5px
@@ -59,30 +59,29 @@
             z-index: 99
             content: ''
             bottom: -4px
-            transition: all 0.3s   
+            transition: all 0.3s
             left: 0
 
     &__desc
-        font-size: 14px    
-        color: #5a5a5aab  
-        padding-top: 10px  
+        font-size: 14px
+        color: #5a5a5aab
+        padding-top: 10px
     &__phone
         max-width: 167px
-        width: 100%  
+        width: 100%
         display: flex
         flex-direction: column
     &__logo
-        max-width: 245px
-        width: 100%   
+        max-width: 216px
     &__right
         width: 100%
-        padding-left: 30px
+        //padding-left: 30px
     &__bottom
         border-top: 1px solid #5a5a5a54
         padding-top: 19px
-        margin-top: 20px   
+        margin-top: 20px
     &__item
-        padding-right: 83px  
+        padding-right: 83px
         color: #5a5a5aab
         position: relative
         transition: 0.3s
@@ -107,14 +106,14 @@
             content: ''
             bottom: -4px
             transform: translateX(1px)
-            transition: all 0.3s    
-            
+            transition: all 0.3s
+
 .footer__phone__item
     font-size: 18px
     color: #5a5a5a
     font-weight: 400
     font-family: 'Roboto Regular'
-    position: relative 
+    position: relative
     & a:hover
         color: $violet
     &::after
@@ -125,8 +124,8 @@
         z-index: 99
         content: ''
         bottom: -4px
-        transition: all 0.3s  
-        left: 0  
+        transition: all 0.3s
+        left: 0
     &:hover::after
         width: 95%
         height: 1.5px
@@ -135,15 +134,89 @@
         z-index: 99
         content: ''
         bottom: -4px
-        transition: all 0.3s   
+        transition: all 0.3s
         left: 0
     &::before
-        content: url('../img/Submissions/phone.svg')
-        position: absolute 
+        content: url('../img/page-climat/Submissions/phone.svg')
+        position: absolute
         left: -25px
         top: 0px
     &:last-child
         padding-top: 10px
         &::before
             content: ''
-
+.footer__top
+    justify-content: space-between
+    display: flex
+.footer-wrap_one
+    display: flex
+    justify-content: space-between
+    width: 526px
+.footer-wrap_two
+    width: 418px
+    display: flex
+    justify-content: space-between
+@media (max-width: 1200px)
+    .footer__logo
+        width: 200px
+    .footer-wrap_one
+        width: 475px
+    .footer-wrap_two
+        width: 350px
+@media (max-width: 992px)
+    .footer__item
+        padding-right: 0
+    .footer__list
+        justify-content: space-between
+    .footer__container
+        flex-wrap: wrap
+        padding-top: 15px
+    .footer__logo
+        margin-left: auto
+        margin-right: auto
+    .footer-wrap_two
+        width: 422px
+        align-items: center
+@media (max-width: 768px)
+    .footer-wrap_one, .footer-wrap_two
+        flex-wrap: nowrap
+        width: 100%
+        margin-bottom: 10px
+    .footer__top
+        flex-wrap: wrap
+    .footer__content
+        text-align: right
+    .footer__info
+        font-size: 14px
+    .footer__title::before
+        left: 52px
+    .footer__container
+        border-top: 1px solid $orange
+@media (max-width: 576px)
+    .footer-wrap_one, .footer-wrap_two
+        flex-direction: column
+        align-items: center
+    .footer-wrap_one
+        margin-bottom: 30px
+    .footer__info
+        text-align: center
+    .footer__content
+        text-align: center
+    .footer__title::before
+        left: 15px
+    //.footer__phone
+    //    max-width: 215px
+    .footer__info
+        font-size: 14px
+        margin-bottom: 30px
+    .footer__btn
+        margin-top: 30px
+        padding: 13px 22px 14px 22px
+@media (max-width: 500px)
+    .footer
+        padding-bottom: 0
+    .footer__list
+        flex-direction: column
+        text-align: center
+    .footer__item
+        margin-bottom: 25px

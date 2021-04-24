@@ -131,16 +131,17 @@
     margin-top: 90px
     margin-bottom: 60px
     position: relative
-    &::after
-        width: 46px
-        height: 46px
-        content: ''
-        position: absolute
-        background: $green
-        border-radius: 100px
-        z-index: -1
-        left: 13.5%
-        top: -5px
+    display: inline-block
+    //&::after
+    //    width: 46px
+    //    height: 46px
+    //    content: ''
+    //    position: absolute
+    //    background: $green
+    //    border-radius: 100px
+    //    z-index: -1
+    //    left: 13.5%
+    //    top: -5px
 
 .productoviy, .productoviy__btn
     display: block
@@ -153,3 +154,13 @@
     left: auto
     right: 30px
     top: 25px
+@media (max-width: 768px)
+    //.news__title:after
+    //    width: 30px
+    //    height: 30px
+    //    right: -10px
+    //    top: -5px
+    //    left: auto
+    .cont__title
+        width: auto
+        text-align: center

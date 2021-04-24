@@ -1,112 +1,103 @@
-.submission
+.service__title
+    display: inline-block
+    max-width: 441px
+    &::after
+        top: auto
+        right: 75px
+        bottom: 10px
+.service-wrap
     display: flex
-    margin-top: 100px
-    &__forms
-        background: #FFFFFF
-        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
-        border-radius: 8px
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-        max-width: 633px
-        max-height: 461px
-        height: 100%
-        padding: 45px 30px 17px 30px
-        margin-bottom: 40px
-        margin-left: -30px
-input.organizations
-    background-image: url('../img/page-climat/submissions/user.svg')
-    background-repeat: no-repeat
-    background-size: 5%
-    background-position-y: 39%
-    background-position-x: 3%
-    padding: 10px
-    padding-left: 40px
-    border-bottom: 1px solid #C9C9C9
-    width: 260px
-
-input.name__man
-    background-image: url('../img/page-climat/submissions/user.svg')
-    background-repeat: no-repeat
-    background-size: 5%
-    background-position-y: 39%
-    background-position-x: 3%
-    padding: 10px
-    padding-left: 40px
-    border-bottom: 1px solid #C9C9C9
-    width: 260px
-
-input.tel__phone
-    background-image: url('../img/page-climat/submissions/phone.svg')
-    background-repeat: no-repeat
-    background-size: 5%
-    background-position-y: 39%
-    background-position-x: 3%
-    padding: 10px
-    padding-left: 40px
-    border-bottom: 1px solid #C9C9C9
-    width: 260px
-
-input.email__user
-    background-image: url('../img/page-climat/submissions/envelope.svg')
-    background-repeat: no-repeat
-    background-size: 5%
-    background-position-y: 39%
-    background-position-x: 3%
-    padding: 10px
-    padding-left: 40px
-    border-bottom: 1px solid #C9C9C9
-    width: 260px
-
-input.oborudovanie
-    padding: 0px 30px
-    border-bottom: 1px solid #C9C9C9
-    height: 150px
-
-input.info
-    padding: 0px 30px
-    border-bottom: 1px solid #C9C9C9
-    height: 100px
-
-.two__srokeForm
-    margin-top: 40px
+.service-img
+    position: relative
+    flex: 50% 0
+.service__img
+    position: absolute
+    width: 374px
+    height: 500px
+    top: 0
+    right: -90px
+    z-index: -2
+.service-form
+    z-index: 2
+    background: #fff
+.service__form
+    width: 633px
+    height: 461px
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+    border-radius: 8px
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
-.subm
-    &__title
-        text-align: left
-        max-width: 431px
-        position: relative
-        z-index: 1
+    padding: 20px 40px 15px 30px
+.service__textarea
+    width: 100%
+    height: 80px
+    border: none
+    border-bottom: 1px solid #AEAEAE
+.service__input:first-child
+    position: relative
+    //&::before
+    //    content: ''
+    //    position: absolute
+    //    top: 10px
+    //    left: 10px
+    //    width: 14px
+    //    height: 14px
+    //    background: url(../img/icons-contact/violet/men.svg)
+.service-button
+    width: 260px
+    height: 50px
+    border: none
+    margin-left: auto
+
+@media (max-width: 1200px)
+    .service__title::after
+        right: 25px
+    .service__form
+        width: 600px
+@media (max-width: 1050px)
+    .service__title::after
+        right: 0
+
+@media (max-width: 992px)
+    .service__img
+        display: none
+    .service__title
+        width: 100%
         &::after
-            width: 46px
-            height: 46px
-            content: ''
-            position: absolute
-            background: $green
-            border-radius: 100px
-            z-index: -1
-            left: 74.1%
-            top: 96px
-    &__imgs
-        text-align: right
-        display: flex
-        justify-content: flex-end
-        z-index: -2
+            right: 33px
+    .service-wrap
+        flex-direction: column
+        align-items: center
+    .service__form
+        width: 100%
+    .service-img
+        width: 100%
+    .service-title-wrap
+        text-align: center
+    .service__title
+        text-align: center
+@media (max-width: 768px)
+    .service__title::after
+        right: 115px
+        bottom: 5px
+    .service__form
+        height: auto
+    .service__input
+        width: 100%
+        &:nth-child(4)
+            margin-bottom: 26px
+    .service__textarea
+        margin-bottom: 26px
 
-.subm__imgss
-    max-width: 438px
-    width: 100%
-    margin-top: -76px
-    z-index: -1
-.left__col
-    max-width: 582px
-    width: 100%
-    margin-right: 65px
-    margin-left: -20px
-
-.one__strokeForm
-    display: flex
-    justify-content: space-between
-.forms__btns
-    text-align: right
+@media (max-width: 576px)
+    .service__form
+        padding: 20px 15px 30px 15px
+    .service-button
+        margin-right: auto
+@media (max-width: 447px)
+    .service__title::after
+        right: 0
+@media (max-width: 385px)
+    .service__title::after
+        right: 15%
