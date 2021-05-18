@@ -83,6 +83,13 @@ closeModalCallback.addEventListener("click", function (e) {
   modalCallback.classList.remove("modal_active");
 })
 
+const swiper0 = new Swiper('.main-slider', {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});
 // слайдеры
 const swiper1 = new Swiper('.swiper1-container', {
   // Optional parameters

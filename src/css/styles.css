@@ -903,6 +903,27 @@ a {
   background: red;
 }
 
+.work {
+  margin-bottom: 70px;
+}
+
+.work-title-wrap {
+  text-align: center;
+}
+
+.work__title {
+  display: inline-block;
+}
+
+.work__button {
+  display: block;
+  width: 230px;
+  height: 50px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .categories {
   padding-top: 40px;
   padding-bottom: 60px;
