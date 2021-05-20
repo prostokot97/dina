@@ -87,7 +87,7 @@ const swiper0 = new Swiper('.main-slider', {
   slidesPerView: 1,
   loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.main-pagination',
   },
 });
 // слайдеры
